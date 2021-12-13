@@ -1,0 +1,67 @@
+package VariaveisTiposdeDadosOperadoresMatematicos;
+
+public class Variaveis {
+	public static void main(String[] args) {
+		
+		int i;
+		
+		// Duplicidade
+		//int i;
+		
+		
+		//sensitive
+		int I;
+		
+		// Variavel não pode começar com número
+		//int 1a;
+		
+		
+		
+		// uma má pratica abaixo
+		int _1a;
+		
+		// outra má pratica
+		int $aq;
+		
+		
+		// Valor inicial para cada variavel definida acima
+		i = 5;
+		I = 10;
+		_1a = 20;
+		$aq = 7;
+		
+		// variavel j sempre será 10, uma constante definida por final
+		final int j = 10;
+		
+		// como ele virou uma constante, é impossivel definir outro valor para a variavel j
+		//j = 15;
+		
+		int asrm24678md;
+		
+		// não é permitido espaços
+		//int asrm 24678md;
+
+		int asrn3$372832_md = 10;
+		
+		// não é permitido o caracter % em uma variavel
+		//int asrn3%438743_md = 10;
+		
+		asrm24678md = 100;
+		asrn3$372832_md = 10;
+		
+		// variavel com uma boa pratica
+		int quantidadeProduto = 50;
+		
+		final int numeroTentativas = 5;
+		
+		System.out.println(i);
+		System.out.println(I);
+		System.out.println(_1a);
+		System.out.println($aq);
+		System.out.println(j);
+		System.out.println(asrm24678md);
+		System.out.println(asrn3$372832_md);
+		System.out.println(quantidadeProduto);
+		System.out.println(numeroTentativas);
+	}
+}
