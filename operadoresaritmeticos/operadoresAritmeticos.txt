@@ -1,0 +1,85 @@
+package VariaveisTiposdeDadosOperadoresMatematicos;
+
+public class operadoresAritmeticos {
+	public static void main(String[] args) {
+		
+		// TIPOS DE OPERADORES PÓS E PRE FIXADOS
+		// PÓS EXP++ EXP--
+		// PRE ++EXP --EXP
+		
+		int k = 10;
+		
+		int pre = --k;
+		int pos = ++k;
+		int x = k;
+		System.out.println("OPERADORES PÓS E PRÉ FIXADOS");
+		System.out.println("pre: " + pre);
+		System.out.println("pos: " + pos);
+		System.out.println("x: " + x + "\n");
+
+		
+		// ARITMETICOS
+		
+		int a = 10;
+		int b = 20;
+		int c = 30;
+		int d = 40;
+		int e = 50;
+		
+		int calc1 = a+b;
+		int calc2 = c-a;
+		int calc3 = d*b;
+		int calc4 = e/a;
+		int calc5 = c%b;
+		
+		System.out.println("OPERADORES ARITMETICOS");
+		System.out.println("a+b = " + calc1);
+		System.out.println("c-a = " + calc2);
+		System.out.println("d*b = " + calc3);
+		System.out.println("e/a = " + calc4);
+		System.out.println("c%b = " + calc5 + "\n");
+		
+		
+		// ATRIBUIÇÕES
+		
+		int i = 1500;
+		short j = 15;
+		long l = 500L;
+		int inteiro = 35;
+		float f = 3.5F;
+		double db = f;
+		
+		System.out.println("OPERADORES DE ATRIBUIÇÕES");
+		System.out.println("d: " + db);
+		
+		i += 5;       // i = i + 5   
+		j -= 3;       // j = j - 3
+		d /= 2.7d;    // d = d / 2.7d 
+		l *= 3;       // l = l *3
+		inteiro %= 2; // inteiro = inteiro % 2
+		
+		System.out.println("i: " + i);
+		System.out.println("j: " + j);
+		System.out.println("d: " + d);
+		System.out.println("l: " + l);
+		System.out.println("inteiro: " + inteiro);
+		
+		// atribuição composta simples
+		
+		i = inteiro = j;
+		
+		System.out.println("inteiro: " + inteiro);
+		System.out.println("i: " + i + "\n");
+		
+		
+		// PRECEDENCIA
+		
+		int precPos = 10;
+		int precPre = 20;
+		int p = 30;
+		
+		// AQUI A PRECEDENCIA PRE MUDA O VALOR ANTES DA EXPRESSÃO DE 20 PARA 19 JÁ A PÓS NÃO, PERMANECE 10
+		int calculo = precPos++ + --precPre * p; // 10 + 19 * 30 -> 10 + 570 -> 580
+		System.out.println("precPos++ + --precPre * p: " + calculo);
+	}
+}
