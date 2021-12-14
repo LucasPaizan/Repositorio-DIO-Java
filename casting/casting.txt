@@ -1,0 +1,23 @@
+package VariaveisTiposdeDadosOperadoresMatematicos;
+
+public class casting {
+	public static void main(String[] args) {
+		// CASTING 		
+		// ALGUNS CONCEITOS
+		// UPCAST(implicito) Exemplo: converter um short (menor) pra int (maior)
+		// DOWNCAST(explicito) Exemplo: converter um double (maior) pra todos os outros tipos primitiso (menores)
+		
+		byte b1;
+		short s1 = 1000;
+		
+		b1 = (byte) s1;
+		
+		
+		int i;
+		long l = 10000000L;
+		
+		i = (int) l;
+
+
+	}
+}
