@@ -1,0 +1,79 @@
+package LogicaCondicionalControleFluxos;
+
+import java.util.Scanner;
+
+public class OperadoresLogicos {
+	/*CONCEITOS
+	
+		CONJUNÇÃO - operação lógica que só é verdadeira quando ambos valores envolvidos são verdade
+		
+		Simbologia: &&
+		Terminologia: and(e)
+		
+		V - V = V
+		V - F = F
+		F - V = F
+		F - F = F
+		
+		DISJUNÇÃO - operação lógica que só é falsa quando ambos valores envolvidos são falsos
+		
+		Simbologia: ||
+		Terminologia: or(ou)
+		
+		V - V = V
+		V - F = V
+		F - V = V
+		F - F = F
+		
+		DISJUNÇÃO EXCLUSIVA - operação lógica que só é verdade quando ambos os valores envolvidos são opostos
+		
+		Simbologia: ^
+		Terminologia: xor
+		
+		V - V = F
+		V - F = V
+		F - V = V
+		F - F = F
+		
+		NEGAÇÃO - operação lógica que inverte o valor envolvido
+		
+		Simbologia: !
+		Terminologia: inversão
+		
+		V = F
+		F = V		
+	*/	
+
+	public static void main(String[] args) {		
+		Scanner scr = new Scanner(System.in);
+		
+		System.out.println("Digite o seu salário mensal:");
+		String a = scr.next();
+		System.out.println("Digite a média salarial da sua área:");
+		String b =  scr.next();
+		System.out.println("Digite a sua quantidade de dependentes:");
+		String c = scr.next();
+		System.out.println("Digite a media de dependentes da sua empresa:");
+		String d = scr.next();
+		
+		double salarioMensal = Double.parseDouble(a.replace(",", "."));
+		double mediaSalario = Double.parseDouble(b.replace(",", "."));
+		double quantidadeDependentes = Double.parseDouble(c.replace(",", "."));
+		double mediaDependentes = Double.parseDouble(d.replace(",", "."));
+		
+		boolean salarioBaixo = salarioMensal < mediaSalario;
+		boolean muitosDependentes = quantidadeDependentes >= mediaDependentes;
+		
+		System.out.println("Calculando sua média financeira...");
+		System.out.println("Calculando sua média financeira...");
+		System.out.println("Calculando sua média financeira...");
+		
+		if(salarioBaixo && muitosDependentes) {
+			System.out.println("Você precisa de auxilio de USD 1.000,00");
+		} else {
+			System.out.println("Seu salário é: " + salarioMensal + "\nE seus números de dependentes são regulares (" + quantidadeDependentes + ")" + "\nPor tanto não há necessidade de auxilio.");
+		}
+		
+		scr.close();
+	}
+}
